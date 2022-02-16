@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> -->
+    <script src="babel.min.js"></script>
+    <script src="react.dev.js"></script>
+    <script src="react-dom.dev.js"></script>
+
+
+    <title>Second</title>
+</head>
+<body>
+    <div id="root">Hellow</div>
+    <!-- <script>
+        class App extends React.Component{
+            render(){
+                return (React.createElement("div", {style:{color:"red"}}, "Hellow Kashyap",
+                React.createElement("h1", {style:{color:"green"}}, "Hellow Kashyap1"),
+                React.createElement("h2", {style:{color:"blue"}}, "Hellow Kashyap2"),
+                React.createElement("h3", {style:{color:"yellow"}}, "Hellow Kashyap3")));
+            }
+        }
+        ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
+    </script>      
+    THIS CODE IS WITHOUT USING BABALE     -->
+    <script type="text/babel">
+        class App extends React.Component{
+            render(){
+                return (
+                    <div>"Hellow Kashyap"
+                        <h1>Hellow Kashyap1</h1>
+                        <h2>Hellow Kashyap2</h2>
+                        <h3>Hellow Kashyap3</h3>
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(<App/>, document.getElementById("root"));
+    </script> 
+</body>
+</html>
